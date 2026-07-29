@@ -20,7 +20,7 @@ jobs:
           card: stats
           options: username=Ycituss&show_icons=true&bg_color=30,e96443,904e95&title_color=fff&text_color=fff&count_private=true
           path: profile/stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT }}
 
       - name: Generate top languages card
         uses: stats-organization/github-readme-stats-action@v2
@@ -28,7 +28,7 @@ jobs:
           card: top-langs
           options: username=Ycituss&layout=compact
           path: profile/top-langs.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT }}
 
       - name: Commit cards
         run: |
